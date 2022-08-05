@@ -1,4 +1,4 @@
-# ngx-spec
+# gsd-spec
 
 A missing schematic for creating Angular spec.
 
@@ -9,13 +9,13 @@ Works only from @angular/cli@^6.0.0 on.
 Angular 7+:
 
 ```sh
-npm i -D ngx-spec@^2.0.0
+npm i -D gsd-spec@^2.0.0
 ```
 
 Angular 6 (only `spec`, no `specs` support):
 
 ```sh
-npm i -D ngx-spec@^1.0.0
+npm i -D gsd-spec@^1.0.0
 ```
 
 ## Supported types
@@ -26,23 +26,23 @@ Supported types are
 const SupportedTypes = ['component', 'directive', 'guard', 'service', 'pipe'];
 ```
 
-## ng g ngx:spec
+## ng g gsd:spec
 
 Run:
 
 ```sh
-ng g ngx-spec:spec path/my.service
+ng g gsd-spec:spec path/my.service
 ```
 
 or
 
 ```sh
-ng g ngx-spec:spec path/my.service.ts
+ng g gsd-spec:spec path/my.service.ts
 ```
 
 > Please note that in a standard Angular CLI project the path will start at `src/app`. That's why if you use the file paths then it would be comfortable to `cd src/app` first and then safely use the shell autocompletion to produce the proper path.
 
-## ng g ngx-spec:specs
+## ng g gsd-spec:specs
 
 Batch specs generator. Supports [minimatch](https://github.com/isaacs/minimatch) globs. Does not override existing spec files.
 
@@ -51,15 +51,15 @@ Batch specs generator. Supports [minimatch](https://github.com/isaacs/minimatch)
 Examples:
 
 ```sh
-ng g ngx-spec:specs 'path/*.service.ts'
+ng g gsd-spec:specs 'path/*.service.ts'
 ```
 
 ```sh
-ng g ngx-spec:specs '**/*.service.ts'
+ng g gsd-spec:specs '**/*.service.ts'
 ```
 
 ```sh
-ng g ngx-spec:specs '**/*'
+ng g gsd-spec:specs '**/*'
 ```
 
 etc. 
